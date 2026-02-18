@@ -13,9 +13,9 @@ jobs:
         run: echo "URL de base $BASE_URL"
 
       - name: Afficher un secret (masqué)
-        run: echo "Clé API ${{ secrets.FAKE_API_KEY }}"
+        run: echo "Clé API ${{ secrets.FAKE_API_KE }}"
 
       - name: Appel simulé d'API
         run: |
-          curl -H "Authorization: Bearer ${{ secrets.FAKE_API_KEY }}" \
+          curl -H "Authorization: Bearer ${{ secrets.FAKE_API_KE }}" \
             $BASE_URL/resource
