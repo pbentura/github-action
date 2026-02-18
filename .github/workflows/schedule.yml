@@ -1,0 +1,12 @@
+name: cron job
+on:
+  schedule:
+    - cron '*/1 * * * *'
+  workflow_dispatch:
+
+jobs:
+  cron-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exécution planifiée
+        run: echo "Ce workflow est lancé automatiquement via CRON."
