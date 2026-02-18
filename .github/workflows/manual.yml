@@ -1,0 +1,11 @@
+name: manual.yml
+on:
+  workflow_dispatch:
+
+jobs:
+  manual-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Message manuel
+        run: echo "workflow manuel"
+
